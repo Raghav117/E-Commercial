@@ -164,7 +164,7 @@ class _SignInUpAccState extends State<SignInUpAcc> {
                     signInyourAccTxt(),
                     signInBtn(),
                     createAccBtn(),
-                    skipSignInBtn(),
+                    // skipSignInBtn(),
                   ],
                 ))));
   }
