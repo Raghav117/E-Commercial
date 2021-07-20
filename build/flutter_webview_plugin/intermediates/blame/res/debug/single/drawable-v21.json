@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\dc6adeb6f24fa58c729a38f312d60f9f\\core-1.1.0\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-v21\\abc_list_divider_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\E-Commercial\\build\\flutter_webview_plugin\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    }
+]
