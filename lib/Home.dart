@@ -14,7 +14,6 @@ import 'package:eshop/ProductList.dart';
 import 'package:eshop/Product_Detail.dart';
 
 import 'package:eshop/SectionList.dart';
-import 'package:eshop/SignInUpAcc.dart';
 
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:flutter/cupertino.dart';
@@ -40,6 +39,7 @@ import 'Model/Section_Model.dart';
 import 'NotificationLIst.dart';
 
 import 'Search.dart';
+import 'SignInUpAcc.dart';
 import 'SubCat.dart';
 
 class Home extends StatefulWidget {
@@ -416,18 +416,57 @@ class StateHomePage extends State<HomePage> with TickerProviderStateMixin {
     });
     String mobile = await getPrefrence("mobile");
     print(mobile);
-    if(mobile == null){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
+    if (mobile == null) {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
         return SignInUpAcc();
       }));
-    }else{
-    Response response = await post(
-        Uri.parse("https://lhpworld.in/app/v1/api/user_details"),
-        body: {"mobile": mobile});
-    userData = jsonDecode(response.body);
-    print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" +
-        userData.toString());
-}
+    } else {
+      Response response = await post(
+          Uri.parse("https://lhpworld.in/app/v1/api/user_details"),
+          body: {"mobile": mobile});
+      userData = jsonDecode(response.body);
+      print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" +
+          userData.toString());
+    }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getUserDetails().whenComplete(() {
+      setState(() {
+        _isCatLoading = false;
+        // loading = false;
+      });
+    });
+    callApi();
+    buttonController = new AnimationController(
+        duration: new Duration(milliseconds: 2000), vsync: this);
+
+    buttonSqueezeanimation = new Tween(
+      begin: deviceWidth * 0.7,
+      end: 50.0,
+    ).animate(new CurvedAnimation(
+      parent: buttonController,
+      curve: new Interval(
+        0.0,
+        0.150,
+      ),
+    ));
+    WidgetsBinding.instance.addPostFrameCallback((_) => _animateSlider());
+  }
+
+  @override
+  void dispose() {
+    buttonController.dispose();
+    super.dispose();
+  }
+
+  Future<Null> _playAnimation() async {
+    try {
+      await buttonController.forward();
+    } on TickerCanceled {}
+  }
 
   updateHomePage() {
     if (mounted) setState(() {});
@@ -1910,9 +1949,3 @@ class StateHomePage extends State<HomePage> with TickerProviderStateMixin {
     );
   }
 }
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
-  }
