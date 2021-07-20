@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\paytm\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\a67f7bb8861c5a1a429443ec4d6e1322\\jetified-play-services-auth-18.1.0\\res\\drawable-watch-v20\\common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\paytm\\intermediates\\res\\merged\\release\\drawable-watch-v20\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\768386e57f560204a14fddfebb2ec081\\appcompat-1.1.0\\res\\drawable-watch-v20\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\paytm\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\a67f7bb8861c5a1a429443ec4d6e1322\\jetified-play-services-auth-18.1.0\\res\\drawable-watch-v20\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\paytm\\intermediates\\res\\merged\\release\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\a67f7bb8861c5a1a429443ec4d6e1322\\jetified-play-services-auth-18.1.0\\res\\drawable-watch-v20\\common_google_signin_btn_text_dark_normal.xml"
+    }
+]

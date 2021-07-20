@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\dc7f0a6e79d79f38fc09bbfa618c914e\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\dc7f0a6e79d79f38fc09bbfa618c914e\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\firebase_auth\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\dc7f0a6e79d79f38fc09bbfa618c914e\\jetified-play-services-base-17.1.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    }
+]

@@ -1,0 +1,1154 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.wrteam.eshop"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:9:5-66
+17-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:9:22-64
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:10:5-81
+18-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:10:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+19-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:11:5-79
+19-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:11:22-76
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:12:5-80
+20-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:12:22-77
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:13:5-81
+21-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:13:22-78
+22    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+22-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:14:5-70
+22-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:14:22-68
+23
+24    <queries>
+24-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:15:5-19:15
+25        <intent>
+25-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:16:9-18:18
+26            <action android:name="android.speech.RecognitionService" />
+26-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:17:13-72
+26-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:17:21-69
+27        </intent>
+28        <intent>
+28-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:16:9-18:18
+29            <action android:name="android.intent.action.GET_CONTENT" />
+30
+31            <data android:mimeType="*/*" />
+31-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+32        </intent>
+33        <intent>
+33-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:16:9-18:18
+34            <action android:name="android.support.customtabs.action.CustomTabsService" />
+35        </intent> <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+36        <package android:name="com.android.chrome" />
+36-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:13:9-54
+36-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:13:18-51
+37    </queries>
+38
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+39-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
+39-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
+40    <uses-permission android:name="android.permission.VIBRATE" />
+40-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:5-66
+40-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:22-63
+41    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+41-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+41-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+42    <uses-permission android:name="android.permission.WAKE_LOCK" />
+42-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
+42-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
+43    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+43-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+43-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+44    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+44-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:8:5-83
+44-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:8:22-80
+45
+46    <uses-feature
+46-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+47        android:glEsVersion="0x00020000"
+47-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+48        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+48-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+49    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+49-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:5-82
+49-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:25:22-79
+50    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+50-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:10:5-75
+50-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:10:22-72
+51    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+51-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+51-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+52    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+53    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+53-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:8:3-74
+53-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:8:20-72
+54
+55    <application
+55-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:20:5-82:19
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\819a608405133777e5fda443d4e6f57d\core-1.5.0\AndroidManifest.xml:24:18-86
+57        android:icon="@mipmap/ic_launcher"
+57-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:23:9-43
+58        android:label="LHP"
+58-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:22:9-28
+59        android:requestLegacyExternalStorage="true"
+59-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:24:9-52
+60        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+60-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:11:18-74
+61        android:usesCleartextTraffic="true" >
+61-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:25:9-44
+62        <meta-data
+62-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:26:9-27:70
+63            android:name="com.google.android.geo.API_KEY"
+63-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:26:20-65
+64            android:value="AIzaSyBPVoSISKwgTjtZdN8Ks4DcP6mW8sp4ZEo" />
+64-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:27:13-68
+65
+66        <activity
+66-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:28:9-43:20
+67            android:name="com.wrteam.eshop.MainActivity"
+67-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:29:13-41
+68            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+68-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:32:13-163
+69            android:hardwareAccelerated="true"
+69-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:33:13-47
+70            android:launchMode="singleTop"
+70-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:30:13-43
+71            android:theme="@style/LaunchTheme"
+71-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:31:13-47
+72            android:windowSoftInputMode="adjustResize" >
+72-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:34:13-55
+73            <intent-filter>
+73-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:35:13-38:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:36:17-68
+74-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:36:25-66
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:37:17-76
+76-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:37:27-74
+77            </intent-filter>
+78            <!--
+79            <intent-filter>
+80                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+81                <category android:name="android.intent.category.DEFAULT" />
+82            </intent-filter>
+83            -->
+84        </activity>
+85        <!--
+86             Don't delete the meta-data below.
+87             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+88        -->
+89        <meta-data
+89-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:46:9-48:33
+90            android:name="flutterEmbedding"
+90-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:47:13-44
+91            android:value="2" />
+91-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:48:13-30
+92
+93        <provider
+94            android:name="vn.hunghd.flutterdownloader.DownloadedFileProvider"
+94-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:50:5-70
+95            android:authorities="com.wrteam.eshop.flutter_downloader.provider"
+95-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:51:5-71
+96            android:exported="false"
+96-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:52:5-29
+97            android:grantUriPermissions="true" >
+97-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:53:5-39
+98            <meta-data
+98-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:54:13-56:49
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:55:9-59
+100                android:resource="@xml/provider_paths" />
+100-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:56:9-47
+101        </provider>
+102        <provider
+103            android:name="vn.hunghd.flutterdownloader.FlutterDownloaderInitializer"
+103-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:65:6-77
+104            android:authorities="com.wrteam.eshop.flutter-downloader-init"
+104-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:66:6-68
+105            android:exported="false" >
+105-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:67:6-30
+106
+107            <!-- changes this number to configure the maximum number of concurrent tasks -->
+108            <meta-data
+108-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:69:13-71:30
+109                android:name="vn.hunghd.flutterdownloader.MAX_CONCURRENT_TASKS"
+109-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:70:10-73
+110                android:value="5" />
+110-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:71:10-27
+111        </provider>
+112
+113        <meta-data
+113-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:73:9-75:56
+114            android:name="vn.hunghd.flutterdownloader.NOTIFICATION_ICON"
+114-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:74:13-73
+115            android:resource="@drawable/ic_launcher" />
+115-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:75:13-53
+116        <meta-data
+116-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:76:9-78:51
+117            android:name="com.google.firebase.messaging.default_notification_icon"
+117-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:77:4-74
+118            android:resource="@drawable/ic_launcher" />
+118-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:78:8-48
+119        <!--
+120  <meta-data
+121  android:name="com.google.firebase.messaging.default_notification_channel_id"
+122  android:value="high_importance_channel" />
+123        -->
+124        <activity
+124-->[:razorpay_flutter] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:20
+125            android:name="com.razorpay.CheckoutActivity"
+125-->[:razorpay_flutter] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:9:13-57
+126            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+126-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:20:13-83
+127            android:label="Razorpay Checkout"
+127-->[:razorpay_flutter] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\razorpay_flutter\intermediates\library_manifest\release\AndroidManifest.xml:10:13-46
+128            android:theme="@style/CheckoutTheme" >
+128-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:21:13-49
+129            <intent-filter>
+129-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:22:13-28:29
+130                <action android:name="android.intent.action.MAIN" />
+130-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:36:17-68
+130-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:36:25-66
+131
+132                <data
+132-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+133                    android:host="rzp.io"
+134                    android:scheme="io.rzp" />
+134-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:23-47
+135            </intent-filter>
+136        </activity>
+137        <activity
+137-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:14:9-17:47
+138            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+138-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:15:13-104
+139            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+139-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:16:13-137
+140            android:theme="@style/AppTheme" />
+140-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:17:13-44
+141        <activity
+141-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:18:9-20:55
+142            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+142-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:19:13-112
+143            android:theme="@style/ThemeTransparent" />
+143-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:20:13-52
+144
+145        <receiver android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver" />
+145-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:22:9-120
+145-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:22:19-117
+146
+147        <meta-data
+147-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:24:9-26:36
+148            android:name="io.flutter.embedded_views_preview"
+148-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:25:13-61
+149            android:value="true" />
+149-->[:flutter_inappwebview] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_inappwebview\intermediates\library_manifest\release\AndroidManifest.xml:26:13-33
+150
+151        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+151-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:9-106
+151-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:19-103
+152        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+152-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:9-20:20
+152-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:19-107
+153            <intent-filter>
+153-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:14:13-19:29
+154                <action android:name="android.intent.action.BOOT_COMPLETED" />
+154-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:17-79
+154-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:25-76
+155                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+155-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:17-84
+155-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:25-81
+156                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+156-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:17-82
+156-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:25-79
+157                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+157-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:17-82
+157-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:25-79
+158            </intent-filter>
+159        </receiver>
+160
+161        <meta-data
+161-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:12:9-14:36
+162            android:name="com.google.android.gms.wallet.api.enabled"
+162-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:13:13-69
+163            android:value="true" />
+163-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:14:13-33
+164
+165        <activity
+165-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:16:9-20:75
+166            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+166-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:17:13-67
+167            android:exported="false"
+167-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+168            android:launchMode="singleTask"
+168-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:19:13-44
+169            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+169-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:20:13-72
+170        <activity
+170-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:21:9-34:20
+171            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+171-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:22:13-67
+172            android:exported="true"
+172-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:23:13-36
+173            android:launchMode="singleTask"
+173-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:24:13-44
+174            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+174-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:25:13-83
+175            <intent-filter>
+175-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:26:13-33:29
+176                <action android:name="android.intent.action.VIEW" />
+176-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:17-69
+176-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:25-66
+177
+178                <category android:name="android.intent.category.DEFAULT" />
+178-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:17-76
+178-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:27-73
+179                <category android:name="android.intent.category.BROWSABLE" />
+179-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:17-78
+179-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:27-75
+180
+181                <data android:scheme="example" />
+181-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+181-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:23-47
+182            </intent-filter>
+183        </activity>
+184
+185        <service
+185-->[:firebase_auth] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+186            android:name="com.google.firebase.components.ComponentDiscoveryService"
+186-->[:firebase_auth] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+187            android:directBootAware="true"
+187-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+188            android:exported="false" >
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:76:13-37
+189            <meta-data
+189-->[:firebase_auth] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+190                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+190-->[:firebase_auth] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+191                android:value="com.google.firebase.components.ComponentRegistrar" />
+191-->[:firebase_auth] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+192            <meta-data
+192-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:34:13-36:85
+193                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+193-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:35:17-128
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:36:17-82
+195            <meta-data
+195-->[:firebase_dynamic_links] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_dynamic_links\intermediates\library_manifest\release\AndroidManifest.xml:11:13-13:85
+196                android:name="com.google.firebase.components:io.flutter.plugins.firebasedynamiclinks.FlutterFirebaseAppRegistrar"
+196-->[:firebase_dynamic_links] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_dynamic_links\intermediates\library_manifest\release\AndroidManifest.xml:12:17-130
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[:firebase_dynamic_links] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_dynamic_links\intermediates\library_manifest\release\AndroidManifest.xml:13:17-82
+198            <meta-data
+198-->[:firebase_core] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+199                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+199-->[:firebase_core] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[:firebase_core] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+201            <meta-data
+201-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+202                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+202-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+204            <meta-data
+204-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:52:13-54:85
+205                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+205-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:53:17-119
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:54:17-82
+207            <meta-data
+207-->[com.google.firebase:firebase-dynamic-links:20.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\cd40bb5249c4ebb11750c3aa6970c113\jetified-firebase-dynamic-links-20.1.0\AndroidManifest.xml:11:13-13:85
+208                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+208-->[com.google.firebase:firebase-dynamic-links:20.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\cd40bb5249c4ebb11750c3aa6970c113\jetified-firebase-dynamic-links-20.1.0\AndroidManifest.xml:12:17-133
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-dynamic-links:20.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\cd40bb5249c4ebb11750c3aa6970c113\jetified-firebase-dynamic-links-20.1.0\AndroidManifest.xml:13:17-82
+210            <meta-data
+210-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\b7c7e79a30c1d0e9a8a320c2ba4a9cae\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+211                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+211-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\b7c7e79a30c1d0e9a8a320c2ba4a9cae\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\b7c7e79a30c1d0e9a8a320c2ba4a9cae\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+213            <meta-data
+213-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\5978529375a89995c9ad70447d7aa4b3\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+214                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+214-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\5978529375a89995c9ad70447d7aa4b3\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\5978529375a89995c9ad70447d7aa4b3\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+216            <meta-data
+216-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\d933e964b35614f1e19124152b714dae\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+217                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+217-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\d933e964b35614f1e19124152b714dae\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\d933e964b35614f1e19124152b714dae\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+219        </service>
+220        <service
+220-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:12:9-15:72
+221            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+221-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:13:13-107
+222            android:exported="false"
+222-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+223            android:permission="android.permission.BIND_JOB_SERVICE" />
+223-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:15:13-69
+224        <service
+224-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:16:9-22:19
+225            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+225-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:17:13-97
+226            android:exported="false" >
+226-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+227            <intent-filter>
+227-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+228                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+228-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+228-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+229            </intent-filter>
+230        </service>
+231
+232        <receiver
+232-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:24:9-31:20
+233            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+233-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:25:13-98
+234            android:exported="true"
+234-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:26:13-36
+235            android:permission="com.google.android.c2dm.permission.SEND" >
+235-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:27:13-73
+236            <intent-filter>
+236-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+237                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+237-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+237-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+238            </intent-filter>
+239        </receiver>
+240
+241        <provider
+241-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:39:9-43:38
+242            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+242-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:40:13-102
+243            android:authorities="com.wrteam.eshop.flutterfirebasemessaginginitprovider"
+243-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:41:13-88
+244            android:exported="false"
+244-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:42:13-37
+245            android:initOrder="99" />
+245-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:43:13-35
+246        <provider
+246-->[:share] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\share\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+247            android:name="io.flutter.plugins.share.ShareFileProvider"
+247-->[:share] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\share\intermediates\library_manifest\release\AndroidManifest.xml:9:13-70
+248            android:authorities="com.wrteam.eshop.flutter.share_provider"
+248-->[:share] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\share\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+249            android:exported="false"
+249-->[:share] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\share\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+250            android:grantUriPermissions="true" >
+250-->[:share] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\share\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+251            <meta-data
+251-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:54:13-56:49
+252                android:name="android.support.FILE_PROVIDER_PATHS"
+252-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:55:9-59
+253                android:resource="@xml/flutter_share_file_paths" />
+253-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:56:9-47
+254        </provider>
+255        <provider
+255-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:12:9-21:20
+256            android:name="com.crazecoder.openfile.FileProvider"
+256-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:13:13-64
+257            android:authorities="com.wrteam.eshop.fileProvider.com.crazecoder.openfile"
+257-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:14:13-88
+258            android:exported="false"
+258-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:15:13-37
+259            android:grantUriPermissions="true" >
+259-->[:open_file] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\open_file\intermediates\library_manifest\release\AndroidManifest.xml:16:13-47
+260            <meta-data
+260-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:54:13-56:49
+261                android:name="android.support.FILE_PROVIDER_PATHS"
+261-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:55:9-59
+262                android:resource="@xml/filepaths" />
+262-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:56:9-47
+263        </provider>
+264
+265        <activity
+265-->[:flutter_paystack] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_paystack\intermediates\library_manifest\release\AndroidManifest.xml:10:9-12:54
+266            android:name="co.paystack.flutterpaystack.AuthActivity"
+266-->[:flutter_paystack] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_paystack\intermediates\library_manifest\release\AndroidManifest.xml:11:13-68
+267            android:theme="@style/Paystack.Dialog" />
+267-->[:flutter_paystack] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_paystack\intermediates\library_manifest\release\AndroidManifest.xml:12:13-51
+268        <activity
+268-->[:url_launcher] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+269            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+269-->[:url_launcher] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+270            android:exported="false"
+270-->[:url_launcher] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+271            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+271-->[:url_launcher] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+272
+273        <provider
+273-->[:flutter_webview_plugin] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:9:9-18:20
+274            android:name="androidx.core.content.FileProvider"
+274-->[:flutter_webview_plugin] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:10:13-62
+275            android:authorities="com.wrteam.eshop.fileprovider"
+275-->[:flutter_webview_plugin] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:11:13-64
+276            android:exported="false"
+276-->[:flutter_webview_plugin] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:12:13-37
+277            android:grantUriPermissions="true" >
+277-->[:flutter_webview_plugin] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_webview_plugin\intermediates\library_manifest\release\AndroidManifest.xml:13:13-47
+278            <meta-data
+278-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:54:13-56:49
+279                android:name="android.support.FILE_PROVIDER_PATHS"
+279-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:55:9-59
+280                android:resource="@xml/filepaths" />
+280-->C:\Users\ragha\Documents\GitHub\eShop v2.0.4\android\app\src\main\AndroidManifest.xml:56:9-47
+281        </provider>
+282
+283        <activity
+283-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+284            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+284-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+285            android:excludeFromRecents="true"
+285-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+286            android:exported="true"
+286-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+287            android:launchMode="singleTask"
+287-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+288            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+288-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+289            <intent-filter>
+289-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+290                <action android:name="android.intent.action.VIEW" />
+290-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:17-69
+290-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:25-66
+291
+292                <category android:name="android.intent.category.DEFAULT" />
+292-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:17-76
+292-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:27-73
+293                <category android:name="android.intent.category.BROWSABLE" />
+293-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:17-78
+293-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:27-75
+294
+295                <data
+295-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+296                    android:host="firebase.auth"
+297                    android:path="/"
+298                    android:scheme="genericidp" />
+298-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:23-47
+299            </intent-filter>
+300        </activity>
+301        <activity
+301-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+302            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+302-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+303            android:excludeFromRecents="true"
+303-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+304            android:exported="true"
+304-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+305            android:launchMode="singleTask"
+305-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+306            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+306-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+307            <intent-filter>
+307-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+308                <action android:name="android.intent.action.VIEW" />
+308-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:17-69
+308-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:25-66
+309
+310                <category android:name="android.intent.category.DEFAULT" />
+310-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:17-76
+310-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:27-73
+311                <category android:name="android.intent.category.BROWSABLE" />
+311-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:17-78
+311-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:27-75
+312
+313                <data
+313-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+314                    android:host="firebase.auth"
+315                    android:path="/"
+316                    android:scheme="recaptcha" />
+316-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:23-47
+317            </intent-filter>
+318        </activity>
+319
+320        <service
+320-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+321            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+321-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+322            android:enabled="true"
+322-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+323            android:exported="false" >
+323-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+324            <intent-filter>
+324-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+325                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+325-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+325-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\04e5944533bbedbb4218ec401b4b623c\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+326
+327                <category android:name="android.intent.category.DEFAULT" />
+327-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:17-76
+327-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:27-73
+328            </intent-filter>
+329        </service>
+330
+331        <activity
+331-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:17:9-19:57
+332            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+332-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:18:13-76
+333            android:theme="@style/StripeDefaultTheme" />
+333-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:19:13-54
+334        <activity
+334-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:20:9-22:57
+335            android:name="com.stripe.android.view.PaymentMethodsActivity"
+335-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:21:13-74
+336            android:theme="@style/StripeDefaultTheme" />
+336-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:22:13-54
+337        <activity
+337-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:23:9-25:57
+338            android:name="com.stripe.android.view.PaymentFlowActivity"
+338-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:24:13-71
+339            android:theme="@style/StripeDefaultTheme" />
+339-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:25:13-54
+340        <activity
+340-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:26:9-29:58
+341            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+341-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:27:13-78
+342            android:theme="@style/StripeDefaultTheme"
+342-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:28:13-54
+343            android:windowSoftInputMode="adjustResize" />
+343-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:29:13-55
+344        <activity
+344-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:30:9-32:61
+345            android:name="com.stripe.android.view.PaymentRelayActivity"
+345-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:31:13-72
+346            android:theme="@style/StripeTransparentTheme" />
+346-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:32:13-58
+347        <!--
+348        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+349        launched the browser Activity will also handle the return URL deep link.
+350        -->
+351        <activity
+351-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:38:9-54:20
+352            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+352-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:39:13-85
+353            android:launchMode="singleTop"
+353-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:40:13-43
+354            android:theme="@style/StripeTransparentTheme" >
+354-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:41:13-58
+355            <intent-filter>
+355-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:42:13-53:29
+356                <action android:name="android.intent.action.VIEW" />
+356-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:17-69
+356-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:27:25-66
+357
+358                <category android:name="android.intent.category.DEFAULT" />
+358-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:17-76
+358-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:29:27-73
+359                <category android:name="android.intent.category.BROWSABLE" />
+359-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:17-78
+359-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:30:27-75
+360
+361                <!-- Must match `DefaultReturnUrl#value`. -->
+362                <data
+362-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:17-50
+363                    android:host="payment_return_url"
+364                    android:path="/com.wrteam.eshop"
+365                    android:scheme="stripesdk" />
+365-->[:stripe_payment] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\stripe_payment\intermediates\library_manifest\release\AndroidManifest.xml:32:23-47
+366            </intent-filter>
+367        </activity>
+368        <activity
+368-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:55:9-57:57
+369            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+369-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:56:13-80
+370            android:theme="@style/StripeDefaultTheme" />
+370-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:57:13-54
+371        <activity
+371-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:58:9-60:69
+372            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+372-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:59:13-80
+373            android:theme="@style/StripePaymentSheetDefaultTheme" />
+373-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:60:13-66
+374        <activity
+374-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:61:9-63:69
+375            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+375-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:62:13-82
+376            android:theme="@style/StripePaymentSheetDefaultTheme" />
+376-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:63:13-66
+377        <activity
+377-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:64:9-66:66
+378            android:name="com.stripe.android.googlepay.StripeGooglePayActivity"
+378-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:65:13-80
+379            android:theme="@style/StripeGooglePayDefaultTheme" /> <!-- Needs to be explicitly declared on P+ -->
+379-->[com.stripe:payments-core:16.10.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c519697902020b587b8540ccf2a13eb5\jetified-payments-core-16.10.0\AndroidManifest.xml:66:13-63
+380        <uses-library
+380-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+381            android:name="org.apache.http.legacy"
+381-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+382            android:required="false" />
+382-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\07857eab4f8776172c493478b2a5d0e3\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+383
+384        <receiver
+384-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:28:9-35:20
+385            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+385-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:29:13-78
+386            android:exported="true"
+386-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:30:13-36
+387            android:permission="com.google.android.c2dm.permission.SEND" >
+387-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:31:13-73
+388            <intent-filter>
+388-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+389                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+389-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+389-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+390            </intent-filter>
+391        </receiver>
+392        <!--
+393             FirebaseMessagingService performs security checks at runtime,
+394             but set to not exported to explicitly avoid allowing another app to call it.
+395        -->
+396        <service
+396-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:41:9-48:19
+397            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+397-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:42:13-82
+398            android:directBootAware="true"
+398-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:43:13-43
+399            android:exported="false" >
+399-->[com.google.firebase:firebase-messaging:22.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\c2a97a59a9ee50842a37be2936401f12\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:44:13-37
+400            <intent-filter android:priority="-500" >
+400-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+401                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+401-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+401-->[:firebase_messaging] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+402            </intent-filter>
+403        </service>
+404
+405        <provider
+405-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+406            android:name="com.google.firebase.provider.FirebaseInitProvider"
+406-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+407            android:authorities="com.wrteam.eshop.firebaseinitprovider"
+407-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+408            android:directBootAware="true"
+408-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+409            android:exported="false"
+409-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+410            android:initOrder="100" />
+410-->[com.google.firebase:firebase-common:20.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\7b76d2eb1cb6377a52cff5e2ba4b464a\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+411
+412        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+412-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:12:9-16:20
+412-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:12:19-63
+413            <intent-filter>
+413-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:13:13-15:29
+414                <action android:name="rzp.device_token.share" />
+414-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:14:17-65
+414-->[com.razorpay:checkout:1.6.6] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\01028611e475af889b57a5c08679183d\jetified-checkout-1.6.6\AndroidManifest.xml:14:25-62
+415            </intent-filter>
+416        </receiver>
+417
+418        <activity
+418-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:14:9-17:66
+419            android:name="com.paytm.pgsdk.PaytmPGActivity"
+419-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:15:13-59
+420            android:screenOrientation="portrait"
+420-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:16:13-49
+421            android:theme="@style/Theme.AppCompat.NoActionBar" />
+421-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:17:13-63
+422
+423        <service
+423-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:19:9-21:40
+424            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+424-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:20:13-73
+425            android:exported="false" />
+425-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:21:13-37
+426        <service
+426-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:22:9-24:40
+427            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+427-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:23:13-72
+428            android:exported="false" />
+428-->[com.paytm.appinvokesdk:appinvokesdk:1.5.3] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\64bc93d0bd6ff1e5c439267dd4df4ec0\jetified-appinvokesdk-1.5.3\AndroidManifest.xml:24:13-37
+429        <service
+429-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:14:9-17:72
+430            android:name="easypay.utils.EasyPayConfigDownloader"
+430-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:15:13-65
+431            android:exported="false"
+431-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:16:13-37
+432            android:permission="android.permission.BIND_JOB_SERVICE" />
+432-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:17:13-69
+433        <service
+433-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:18:9-22:72
+434            android:name="easypay.utils.AnalyticsService"
+434-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:19:13-58
+435            android:enabled="true"
+435-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:20:13-35
+436            android:exported="false"
+436-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:21:13-37
+437            android:permission="android.permission.BIND_JOB_SERVICE" />
+437-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:22:13-69
+438
+439        <activity android:name="easypay.AnalyticsManagerInfoDisplayActivity" />
+439-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:24:9-80
+439-->[com.paytm.easypay:easypay:8.7.3-appinvoke-4] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\2896e58b2a195c157dee258fcaf60cf4\jetified-easypay-8.7.3-appinvoke-4\AndroidManifest.xml:24:19-77
+440        <activity
+440-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+441            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+441-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+442            android:excludeFromRecents="true"
+442-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+443            android:exported="false"
+443-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+444            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+444-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+445        <!--
+446            Service handling Google Sign-In user revocation. For apps that do not integrate with
+447            Google Sign-In, this service will never be started.
+448        -->
+449        <service
+449-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+450            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+450-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+451            android:exported="true"
+451-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+452            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+452-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+453            android:visibleToInstantApps="true" />
+453-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\a67f7bb8861c5a1a429443ec4d6e1322\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+454
+455        <receiver
+455-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+456            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+456-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+457            android:enabled="true"
+457-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+458            android:exported="false" >
+458-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+459        </receiver>
+460
+461        <service
+461-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+462            android:name="com.google.android.gms.measurement.AppMeasurementService"
+462-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+463            android:enabled="true"
+463-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+464            android:exported="false" />
+464-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+465        <service
+465-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+466            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+466-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+467            android:enabled="true"
+467-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+468            android:exported="false"
+468-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+469            android:permission="android.permission.BIND_JOB_SERVICE" />
+469-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f57e28f5a6af6fd33cfc0ca3762dcaf1\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+470
+471        <activity
+471-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\0ef65582ea59b68285b5e66acec2549b\jetified-play-services-base-17.5.0\AndroidManifest.xml:23:9-26:75
+472            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+472-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\0ef65582ea59b68285b5e66acec2549b\jetified-play-services-base-17.5.0\AndroidManifest.xml:24:13-79
+473            android:exported="false"
+473-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\0ef65582ea59b68285b5e66acec2549b\jetified-play-services-base-17.5.0\AndroidManifest.xml:25:13-37
+474            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+474-->[com.google.android.gms:play-services-base:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\0ef65582ea59b68285b5e66acec2549b\jetified-play-services-base-17.5.0\AndroidManifest.xml:26:13-72
+475
+476        <meta-data
+476-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4d24d63b02d27f74fc9939fcd9c8f1d2\jetified-play-services-basement-17.5.0\AndroidManifest.xml:23:9-25:69
+477            android:name="com.google.android.gms.version"
+477-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4d24d63b02d27f74fc9939fcd9c8f1d2\jetified-play-services-basement-17.5.0\AndroidManifest.xml:24:13-58
+478            android:value="@integer/google_play_services_version" />
+478-->[com.google.android.gms:play-services-basement:17.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4d24d63b02d27f74fc9939fcd9c8f1d2\jetified-play-services-basement-17.5.0\AndroidManifest.xml:25:13-66
+479
+480        <service
+480-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+481            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+481-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+482            android:exported="false" >
+482-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+483            <meta-data
+483-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+484                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+484-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+485                android:value="cct" />
+485-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\75b689d61508dbb05fff87563ce551e3\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+486        </service> <!-- The activities will be merged into the manifest of the hosting app. -->
+487        <activity
+487-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:5-271
+488            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+488-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:15-102
+489            android:enabled="false"
+489-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:103-126
+490            android:exported="false"
+490-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:127-151
+491            android:launchMode="singleInstance"
+491-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:204-239
+492            android:process=":playcore_missing_splits_activity"
+492-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:152-203
+493            android:stateNotNeeded="true" />
+493-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:12:240-269
+494        <activity
+494-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:5-226
+495            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+495-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:15-95
+496            android:enabled="false"
+496-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:96-119
+497            android:exported="false"
+497-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:120-144
+498            android:stateNotNeeded="true"
+498-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:145-174
+499            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+499-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:13:175-224
+500        <service
+500-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:16:5-18:15
+501            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+501-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:16:14-95
+502            android:enabled="false"
+502-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:16:96-119
+503            android:exported="true" >
+503-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:16:120-143
+504            <meta-data
+504-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:17:7-108
+505                android:name="com.google.android.play.core.assetpacks.versionCode"
+505-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:17:18-84
+506                android:value="10901" />
+506-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:17:85-106
+507        </service>
+508        <service
+508-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:19:5-147
+509            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+509-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:19:14-96
+510            android:enabled="false"
+510-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:19:97-120
+511            android:exported="false" />
+511-->[com.google.android.play:core:1.9.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\4aa0135234afc1565dca4bf7ba0152ef\jetified-core-1.9.1\AndroidManifest.xml:19:121-145
+512        <service
+512-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:39:9-44:35
+513            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+513-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:40:13-88
+514            android:directBootAware="false"
+514-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:41:13-44
+515            android:enabled="@bool/enable_system_alarm_service_default"
+515-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:42:13-72
+516            android:exported="false" />
+516-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:43:13-37
+517        <service
+517-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:45:9-51:35
+518            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+518-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:46:13-84
+519            android:directBootAware="false"
+519-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:47:13-44
+520            android:enabled="@bool/enable_system_job_service_default"
+520-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:48:13-70
+521            android:exported="true"
+521-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:49:13-36
+522            android:permission="android.permission.BIND_JOB_SERVICE" />
+522-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:50:13-69
+523        <service
+523-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:52:9-57:35
+524            android:name="androidx.work.impl.foreground.SystemForegroundService"
+524-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:53:13-81
+525            android:directBootAware="false"
+525-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:54:13-44
+526            android:enabled="@bool/enable_system_foreground_service_default"
+526-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:55:13-77
+527            android:exported="false" />
+527-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:56:13-37
+528
+529        <receiver
+529-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:59:9-64:35
+530            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+530-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:60:13-88
+531            android:directBootAware="false"
+531-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:61:13-44
+532            android:enabled="true"
+532-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:62:13-35
+533            android:exported="false" />
+533-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:63:13-37
+534        <receiver
+534-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:65:9-75:20
+535            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+535-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:66:13-106
+536            android:directBootAware="false"
+536-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:67:13-44
+537            android:enabled="false"
+537-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:68:13-36
+538            android:exported="false" >
+538-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:69:13-37
+539            <intent-filter>
+539-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:71:13-74:29
+540                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+540-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:72:17-87
+540-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:72:25-84
+541                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+541-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:73:17-90
+541-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:73:25-87
+542            </intent-filter>
+543        </receiver>
+544        <receiver
+544-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:76:9-86:20
+545            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+545-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:77:13-104
+546            android:directBootAware="false"
+546-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:78:13-44
+547            android:enabled="false"
+547-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:79:13-36
+548            android:exported="false" >
+548-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:80:13-37
+549            <intent-filter>
+549-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:82:13-85:29
+550                <action android:name="android.intent.action.BATTERY_OKAY" />
+550-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:83:17-77
+550-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:83:25-74
+551                <action android:name="android.intent.action.BATTERY_LOW" />
+551-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:84:17-76
+551-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:84:25-73
+552            </intent-filter>
+553        </receiver>
+554        <receiver
+554-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:87:9-97:20
+555            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+555-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:88:13-104
+556            android:directBootAware="false"
+556-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:89:13-44
+557            android:enabled="false"
+557-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:90:13-36
+558            android:exported="false" >
+558-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:91:13-37
+559            <intent-filter>
+559-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:93:13-96:29
+560                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+560-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:94:17-83
+560-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:94:25-80
+561                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+561-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:95:17-82
+561-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:95:25-79
+562            </intent-filter>
+563        </receiver>
+564        <receiver
+564-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:98:9-107:20
+565            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+565-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:99:13-103
+566            android:directBootAware="false"
+566-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:100:13-44
+567            android:enabled="false"
+567-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:101:13-36
+568            android:exported="false" >
+568-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:102:13-37
+569            <intent-filter>
+569-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:104:13-106:29
+570                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+570-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:105:17-79
+570-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:105:25-76
+571            </intent-filter>
+572        </receiver>
+573        <receiver
+573-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:108:9-119:20
+574            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+574-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:109:13-88
+575            android:directBootAware="false"
+575-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:110:13-44
+576            android:enabled="false"
+576-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:111:13-36
+577            android:exported="false" >
+577-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:112:13-37
+578            <intent-filter>
+578-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:114:13-118:29
+579                <action android:name="android.intent.action.BOOT_COMPLETED" />
+579-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:17-79
+579-->[:flutter_local_notifications] C:\Users\ragha\Documents\GitHub\eShop v2.0.4\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:25-76
+580                <action android:name="android.intent.action.TIME_SET" />
+580-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:116:17-73
+580-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:116:25-70
+581                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+581-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:117:17-81
+581-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:117:25-78
+582            </intent-filter>
+583        </receiver>
+584        <receiver
+584-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:120:9-129:20
+585            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+585-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:121:13-99
+586            android:directBootAware="false"
+586-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:122:13-44
+587            android:enabled="@bool/enable_system_alarm_service_default"
+587-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:123:13-72
+588            android:exported="false" >
+588-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:124:13-37
+589            <intent-filter>
+589-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:126:13-128:29
+590                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+590-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:127:17-98
+590-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:127:25-95
+591            </intent-filter>
+592        </receiver>
+593        <receiver
+593-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:130:9-140:20
+594            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+594-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:131:13-78
+595            android:directBootAware="false"
+595-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:132:13-44
+596            android:enabled="true"
+596-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:133:13-35
+597            android:exported="true"
+597-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:134:13-36
+598            android:permission="android.permission.DUMP" >
+598-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:135:13-57
+599            <intent-filter>
+599-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:137:13-139:29
+600                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+600-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:138:17-88
+600-->[androidx.work:work-runtime:2.5.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\3713dbe002d2b58fdac64cc4d3ffe753\work-runtime-2.5.0\AndroidManifest.xml:138:25-85
+601            </intent-filter>
+602        </receiver>
+603
+604        <activity
+604-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:10:9-12:54
+605            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+605-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:11:13-81
+606            android:theme="@style/Stripe3DS2Theme" />
+606-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:12:13-51
+607        <activity
+607-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:13:9-15:54
+608            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+608-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:14:13-89
+609            android:theme="@style/Stripe3DS2Theme" />
+609-->[com.stripe:stripe-3ds2-android:5.3.1] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\dbfbbc1f4996524dd92caf54a81e0440\jetified-stripe-3ds2-android-5.3.1\AndroidManifest.xml:15:13-51
+610
+611        <service
+611-->[androidx.room:room-runtime:2.2.5] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f98db54d6ee1550047856b25b1f831e1\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+612            android:name="androidx.room.MultiInstanceInvalidationService"
+612-->[androidx.room:room-runtime:2.2.5] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f98db54d6ee1550047856b25b1f831e1\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+613            android:directBootAware="true"
+613-->[androidx.room:room-runtime:2.2.5] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f98db54d6ee1550047856b25b1f831e1\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+614            android:exported="false" />
+614-->[androidx.room:room-runtime:2.2.5] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\f98db54d6ee1550047856b25b1f831e1\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+615        <service
+615-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+616            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+616-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+617            android:exported="false"
+617-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+618            android:permission="android.permission.BIND_JOB_SERVICE" >
+618-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+619        </service>
+620
+621        <receiver
+621-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+622            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+622-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+623            android:exported="false" />
+623-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\ragha\.gradle\caches\transforms-2\files-2.1\e019b6448a07ccce40b9b797c8b4d101\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+624    </application>
+625
+626</manifest>

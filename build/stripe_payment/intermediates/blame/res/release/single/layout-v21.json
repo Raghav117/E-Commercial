@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\stripe_payment\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\819a608405133777e5fda443d4e6f57d\\core-1.5.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\stripe_payment\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\819a608405133777e5fda443d4e6f57d\\core-1.5.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\stripe_payment\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\819a608405133777e5fda443d4e6f57d\\core-1.5.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\stripe_payment\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\ragha\\.gradle\\caches\\transforms-2\\files-2.1\\819a608405133777e5fda443d4e6f57d\\core-1.5.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

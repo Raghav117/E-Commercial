@@ -1,0 +1,7 @@
+#Mon Jul 19 21:03:37 IST 2021
+base.0=C\:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=C\:\\Users\\ragha\\Documents\\GitHub\\eShop v2.0.4\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes2.dex
